@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="mainVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="912.0" spacing="1.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.main.java.com.example.upravljanje.UpravljanjeSimulacijom">
+   <children>
+      <Label fx:id="lbSimulacijaPrelaza" alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="948.0" style="-fx-border-color: black;" text="Симулација прелаза">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="97.0" prefWidth="912.0">
+         <children>
+            <VBox fx:id="vbPauza" alignment="CENTER" prefHeight="95.0" prefWidth="220.0" spacing="7.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Button fx:id="btnPauzirajSimulaciju" mnemonicParsing="false" onAction="#pauzirajSimulaciju" prefHeight="39.0" prefWidth="140.0" text="ПАУЗИРАЈ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNastaviSimulaciju" mnemonicParsing="false" onAction="#nastaviSimulaciju" prefHeight="39.0" prefWidth="140.0" text="НАСТАВИ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="vbPrikazVremena" alignment="CENTER" prefHeight="95.0" prefWidth="724.0" style="-fx-border-color: #000000;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="1.0" />
+               </HBox.margin>
+               <children>
+                  <Label fx:id="lbVrijemeIzvrsavanjaSimulacije" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="595.0" text="Вријеме трајања симулације: 00:00:00">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbVozilaKojaNisuProcesirana" alignment="CENTER" text="Број непроцесираних возила: 0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbBrojVozilaNaMapiCekanja" text="Број возила на мапи чекања: 0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox fx:id="vbGridVBox" maxHeight="414.0" maxWidth="912.0" minHeight="414.0" minWidth="912.0" prefHeight="414.0" prefWidth="912.0" style="-fx-border-color: #000000;">
+         <VBox.margin>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox fx:id="hbBottomHBox" prefHeight="138.0" prefWidth="912.0" style="-fx-border-color: #000000;">
+         <VBox.margin>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </VBox.margin>
+         <children>
+            <VBox fx:id="vbPrikazDugmadZaPrikaz" alignment="CENTER" prefHeight="135.0" prefWidth="384.0" spacing="5.0">
+               <HBox.margin>
+                  <Insets right="1.0" />
+               </HBox.margin>
+               <children>
+                  <Button fx:id="btnVozilaKojaSuImalaIncident" mnemonicParsing="false" onAction="#otvoriProzorSaVozilimaKojaSuImalaIncident" prefHeight="35.0" prefWidth="245.0" text="Возила са инцидентом">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnVozilaUCekanju" mnemonicParsing="false" onAction="#otvoriProzorSaVozilimaUCekanju" prefHeight="35.0" prefWidth="245.0" text="Возила у чекању">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="vbPrikazPretrage" prefHeight="135.0" prefWidth="560.0">
+               <HBox.margin>
+                  <Insets left="1.0" />
+               </HBox.margin>
+               <children>
+                  <Button fx:id="btnPrikaziPodatke" mnemonicParsing="false" onAction="#prikaziPodatkeOVozilu" prefHeight="35.0" prefWidth="245.0" text="Прикажи податке">
+                     <VBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="tbPodaciZaPretragu" alignment="CENTER" prefHeight="35.0" prefWidth="243.0" promptText="Унесите ИД возила">
+                     <VBox.margin>
+                        <Insets left="10.0" right="286.0" top="8.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

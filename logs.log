@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-04-23T08:11:17.899315200Z</date>
+  <millis>1713859877899</millis>
+  <nanos>315200</nanos>
+  <sequence>6</sequence>
+  <logger>LOGGER</logger>
+  <level>INFO</level>
+  <class>src.main.java.com.example.dokumentacija.RadSaSuspenzijama</class>
+  <method>ucitajListuSuspendovanihVozila</method>
+  <thread>28</thread>
+  <message>Fajl je trenutno prazan</message>
+</record>
+</log>

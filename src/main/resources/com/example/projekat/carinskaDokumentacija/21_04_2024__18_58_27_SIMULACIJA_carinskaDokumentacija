@@ -1,0 +1,62 @@
+
+SERIJSKI BROJ DOKUMENTACIJE: 1_21_04_2024__06_59_17
+Terminal: Carinski terminal 3
+Vozilo: Аутобус1
+Razlog: PUTNIK_POSJEDUJE_NEDOZVOLJENE_STVARI_U_KOFERU
+Putnik: Ime159 Prezime159
+Datum i vrijeme: 21_04_2024__06_59_17
+
+
+SERIJSKI BROJ DOKUMENTACIJE: 2_21_04_2024__07_00_00
+Terminal: Carinski terminal 4
+Vozilo: Камион9
+Vozac: Ime207 Prezime207
+Deklarisana tezina: 40000
+Stvarna tezina: 37051
+Datum i vrijeme: 21_04_2024__07_00_00
+
+
+SERIJSKI BROJ DOKUMENTACIJE: 3_21_04_2024__07_02_02
+Terminal: Carinski terminal 4
+Vozilo: Камион3
+Vozac: Ime195 Prezime195
+Deklarisana tezina: 32000
+Stvarna tezina: 25843
+Datum i vrijeme: 21_04_2024__07_02_02
+
+
+SERIJSKI BROJ DOKUMENTACIJE: 4_21_04_2024__07_02_39
+Terminal: Carinski terminal 4
+Vozilo: Камион4
+Vozac: Ime197 Prezime197
+Deklarisana tezina: 26000
+Stvarna tezina: 15224
+Datum i vrijeme: 21_04_2024__07_02_39
+
+
+SERIJSKI BROJ DOKUMENTACIJE: 5_21_04_2024__07_04_55
+Terminal: Carinski terminal 3
+Vozilo: Аутобус0
+Razlog: PUTNIK_POSJEDUJE_NEDOZVOLJENE_STVARI_U_KOFERU
+Putnik: Ime132 Prezime132
+Datum i vrijeme: 21_04_2024__07_04_55
+
+
+SERIJSKI BROJ DOKUMENTACIJE: 6_21_04_2024__07_04_57
+Terminal: Carinski terminal 4
+Vozilo: Камион1
+Vozac: Ime191 Prezime191
+Razlog: PREKORACENJE_DOZVOLJENE_TEZINE
+Deklarisana tezina: 3500
+Stvarna tezina: 4170
+Datum i vrijeme: 21_04_2024__07_04_57
+
+
+SERIJSKI BROJ DOKUMENTACIJE: 7_21_04_2024__07_05_39
+Terminal: Carinski terminal 4
+Vozilo: Камион8
+Vozac: Ime204 Prezime204
+Deklarisana tezina: 3500
+Stvarna tezina: 3123
+Datum i vrijeme: 21_04_2024__07_05_39
+
